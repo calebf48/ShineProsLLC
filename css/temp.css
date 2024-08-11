@@ -1,0 +1,59 @@
+.services_taital {
+    width: 100%;
+    font-size: 30px;
+    color: #252525;
+    text-align: center;
+    font-weight: bold;
+}
+.services_taital::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 10px;
+    background-color: #000;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: 0px;
+    border-radius: 100px;
+}
+
+.testimonial_taital {
+    width: 100%;
+    font-size: 30px;
+    color: #111111;
+    text-align: center;
+    font-weight: bold;
+}
+.testimonial_taital::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 10px;
+    background-color: #252525;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: 0px;
+    border-radius: 100px;
+}
+
+input{
+    font-size:14px;
+    border-radius: 6px;
+    line-height:1.5;
+    padding:5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    height: 36px;
+    :hover {
+        border-color: #ccc
+    }
+    :focus {
+        border-color: #9147ff;
+        background: #fff;
+    }
+}

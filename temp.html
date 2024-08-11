@@ -1,55 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>ShinePros Cleaning LLC</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+
+
+
+
+
+
+
+
+
 <!-- form section start -->
-<div class = "form_section layout_padding">
-    <div class="container">
-       <h1 class="testimonial_taital">Get a Quote Today!</h1>
-       <div class = "form_fields">
-          <body>
-             <form>
-                   <legend>Customer Information</legend>
-                   <div>
-                      <label for="name">Name</label> <br>
-                      <input required type ="text" id = "name" name="name" autocomplete="name"> <br>
+<div class="form_section layout_padding">
+   <div class="container">
+      <h1 class="form_taital">Get a <span style="color: #0c426e">Quote</span></h1>
+      <div class="form_fields">
+            <form>
+               <fieldset>
+                  <legend>Customer Information</legend>
+                     <label for="name">Name</label> <br>
+                  <div class="input-center">   
+                     <input type ="text" id = "name" name="name" autocomplete="name"> <br>
+                  </div>
+                     <label for="email">Email</label> <br>
+                  <div class="input-center">
+                     <input type ="email" id = "email" name="email" autocomplete="email"> <br>
+                  </div>
+                     <label for="cust_number">Phone Number</label> <br>
+                  <div class="input-center">
+                     <input type ="tel" id = "cust_number" name="cust_number" autocomplete="tel"> <br>
+                  </div>
+                     <label for="street-address">Street Address</label> <br>
+                  <div class="input-center">
+                     <input type = "text" id="street-address" name="street-address" autocomplete="street-address"> <br>
+                  </div>
+                     <label for="postal-code">ZIP/Postal Code</label> <br>
+                  <div class="input-center">
+                     <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"> <br>
+                  </div>
+                     <label for="city">City</label> <br>
+                  <div class="input-center">
+                     <input type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next"> <br>
                    </div>
-                   <div>
-                      <label for="email">Email</label> <br>
-                      <input type ="email" id = "email" name="email" autocomplete="email"> <br>
+                   <label for="state">State</label>
+                   <div class="select-center">
+                     <select name="state" id="state">
+                        <option value="default">--</option>
+                        <option value="AL">AL</option>
+                        <option value="FL">FL</option>
+                     </select> 
                    </div>
-                   <div>
-                      <label for="cust_number">Phone Number</label> <br>
-                      <input type ="tel" id = "cust_number" name="cust_number" autocomplete="tel"> <br>
-                   </div>
-                   <div>
-                      <label for="street-address">Street Address</label> <br>
-                      <input type = "text" id="street-address" name="street-address" autocomplete="street-address"> <br>
-                   </div>
-                   <div>
-                      <label for="postal-code">ZIP/Postal Code</label> <br>
-                      <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"> <br>
-                    </div>
-                    <div>
-                      <label for="city">City</label> <br>
-                      <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next"> <br>
-                    </div>
-                    <label for="state">State</label> <br>
-                    <div class="select-center">
-                        <select name="state" id="state">
-                            <option value="default">--</option>
-                            <option value="AL">AL</option>
-                            <option value="FL">FL</option>
-                        </select>
-                    </div>
-                    <input type="button" value="Button" formaction="/index.html">
-                    <button type="submit" value="Button" formaction="/ShineProsLLC/index.html"></button>
-             </form>
-          </body>
-       </div>
-    </div>
- </div>
- <!-- form section end -->
+                   <div class="radio-group">
+                  <label for="res">Residential</label>
+                  <input type="radio" id="res" name="res-com" value="Residential" checked>
+                  <label for="com">Commercial</label>
+                  <input type="radio" id="cus" name="res-com" value="Commercial">
+                  </div>
+                  <button type="submit" class="button-submit" formaction="/mail.php">Submit</button>
+               </fieldset>
+            </form>
+      </div>
+   </div>
+</div>
+<!-- form section end -->
 
-
- <div class="form_section layout_padding">
-    <div class="container">
-       <h1 class="form_taital">Get a Quote</h1>
-    </div>
- </div>
+   </body>
+</html>

@@ -281,7 +281,6 @@
          <div class="container">
             <h1 class="form_taital">Get a <span style="color: #0c426e">Quote</span></h1>
             <div class="form_fields">
-               <body>
                   <form>
                      <fieldset>
                         <legend>Customer Information</legend>
@@ -315,12 +314,16 @@
                               <option value="default">--</option>
                               <option value="AL">AL</option>
                               <option value="FL">FL</option>
-                           </select>
-                         </div>
-                         <button type="submit" class="button-submit" formaction="/ShineProsLLC/temp.html">Submit</button>
+                           </select> 
+                         </div> <br>
+                        <input type="radio" id="res" name="res-com" value="Residential" checked>
+                        <label for="res">Residential</label> <br>
+                        <input type="radio" id="cus" name="res-com" value="Commercial">
+                        <label for="com">Commercial</label> <br>
+                        <button type="submit" class="button-submit" formaction="/mail.php">Submit</button>
+
                      </fieldset>
                   </form>
-               </body>
             </div>
          </div>
       </div>

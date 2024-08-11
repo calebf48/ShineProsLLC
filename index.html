@@ -277,39 +277,47 @@
       </div>
       <!-- testimonial section end -->
       <!-- form section start -->
-      <div class = "form_section layout_padding">
+      <div class="form_section layout_padding">
          <div class="container">
-            <h1 class="testimonial_taital">Get a Quote Today!</h1>
-            <div class = "form_fields">
+            <h1 class="form_taital">Get a <span style="color: #0c426e">Quote</span></h1>
+            <div class="form_fields">
                <body>
                   <form>
                      <fieldset>
                         <legend>Customer Information</legend>
-                        <div>
                            <label for="name">Name</label> <br>
-                           <input required type ="text" id = "name" name="name" autocomplete="name"> <br>
+                        <div class="input-center">   
+                           <input type ="text" id = "name" name="name" autocomplete="name"> <br>
                         </div>
-                        <div>
                            <label for="email">Email</label> <br>
+                        <div class="input-center">
                            <input type ="email" id = "email" name="email" autocomplete="email"> <br>
                         </div>
-                        <div>
                            <label for="cust_number">Phone Number</label> <br>
+                        <div class="input-center">
                            <input type ="tel" id = "cust_number" name="cust_number" autocomplete="tel"> <br>
                         </div>
-                        <div>
                            <label for="street-address">Street Address</label> <br>
+                        <div class="input-center">
                            <input type = "text" id="street-address" name="street-address" autocomplete="street-address"> <br>
                         </div>
-                        <div>
                            <label for="postal-code">ZIP/Postal Code</label> <br>
+                        <div class="input-center">
                            <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"> <br>
-                         </div>
-                         <div>
+                        </div>
                            <label for="city">City</label> <br>
-                           <input required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next"> <br>
+                        <div class="input-center">
+                           <input type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next"> <br>
                          </div>
-                         <div>
+                         <label for="state">State</label>
+                         <div class="select-center">
+                           <select name="state" id="state">
+                              <option value="default">--</option>
+                              <option value="AL">AL</option>
+                              <option value="FL">FL</option>
+                           </select>
+                         </div>
+                         <button type="submit" class="button-submit" formaction="/ShineProsLLC/temp.html">Submit</button>
                      </fieldset>
                   </form>
                </body>

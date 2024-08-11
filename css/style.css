@@ -747,19 +747,79 @@ img.padding_right_10 {
 
 /* form section start */
 
-form{
+.form_taital {
+    width: 100%;
+    font-size: 30px;
+    color: #111111;
+    text-align: center;
+    font-weight: bold;
+}
 
+.form_taital::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 10px;
+    background-color: #252525;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: 0px;
+    border-radius: 100px;
+}
+
+.form_section {
+    width: 100%;
+    float: left;
+    height: auto;
 }
 
 input{
-    border: 1px solid;
-    padding:0.3em;
-    width: 30em;
+    width:300px;
+    font-size:14px;
+    border-radius: 6px;
+    line-height:1.5;
+    padding:5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    display: block;
+    height: 36px;
+    :hover {
+        border-color: #ccc
+    }
+    :focus {
+        border-color: #9147ff;
+        background: #fff;
+    }
 }
 
 .form_fields {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
     padding-top:20px;
+    padding-bottom:20px;
+}
+
+.select-center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-submit {
+    background:#dee1e2;
+    border-radius: 6px;
+    width:200px;
 }
 /* form section end */
 
@@ -925,7 +985,7 @@ input.Enter_text::placeholder {
 
 .twitterBtn:before {
     font-family: "FontAwesome";
-    content: "\f099";
+    content: "\f16d";
     /* add twitter icon */
 }
 

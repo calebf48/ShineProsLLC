@@ -28,7 +28,7 @@
       <!-- owl stylesheets --> 
       <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
    <body>
@@ -36,7 +36,7 @@
       <div class="header_section">
          <div class="container-fluid">
             <div class="costum_header">
-               <div class="logo"><a href="index.html"><img src="images/shinepros_logo.jpg"></a></div>
+               <div class="logo"><a href="index.php"><img src="images/shinepros_logo.jpg"></a></div>
                <div class="contact_menu">
                   <ul>
                      <li><img src="images/call-icon.png" class="padding_right_10"><a href="#">Call: +01 1234567890</a></li>
@@ -48,7 +48,7 @@
                   <div id="myNav" class="overlay">
                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                      <div class="overlay-content">
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                         <a href="services.html">Services</a>
                         <a href="providing.html">Providing</a>
                         <a href="choose.html">Choose</a>
@@ -73,8 +73,8 @@
                               <p class="banner_text">Experience the world with crystal-clear windows, enhancing every view with our expert touch.</p>
                            </div>
                            <div class="btn_main">
-                              <div class="quote_bt active"><a href="#">Get A Quote</a></div>
-                              <div class="contact_bt"><a href="#">Contact Us</a></div>
+                              <div class="quote_bt active"><a href="#quote">Get A Quote</a></div>
+                              <div class="contact_bt"><a href="#contact">Contact Us</a></div>
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -90,8 +90,8 @@
                               <p class="banner_text">Let natural light flood your home with our meticulous window cleaning, making every room feel brighter and fresher.</p>
                            </div>
                            <div class="btn_main">
-                              <div class="quote_bt active"><a href="#">Get A Quote</a></div>
-                              <div class="contact_bt"><a href="#">Contact Us</a></div>
+                              <div class="quote_bt active"><a href="#quote">Get A Quote</a></div>
+                              <div class="contact_bt"><a href="#contact">Contact Us</a></div>
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -107,8 +107,8 @@
                               <p class="banner_text">We promise spotless, streak-free windows that shine, backed by our satisfaction guarantee.</p>
                            </div>
                            <div class="btn_main">
-                              <div class="quote_bt active"><a href="#">Get A Quote</a></div>
-                              <div class="contact_bt"><a href="#">Contact Us</a></div>
+                              <div class="quote_bt active"><a href="#quote">Get A Quote</a></div>
+                              <div class="contact_bt"><a href="#contact">Contact Us</a></div>
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -139,12 +139,12 @@
                         <h4 class="express_text">Comprehensive Window Cleaning</h4>
                         <p class="lorem_text">We offer thorough window cleaning services that leave your windows spotless, streak-free, and crystal clear. Whether it's interior or exterior, our attention to detail ensures every pane shines. </p>
                         <div class="seemore_bt"><a href="#">See More</a></div>
-                        <div><img src="images/img-2.png" class="image_1"></div>
+                        <div><img src="images/stock5-3.jpg" class="image_1"></div>
                      </div>
                   </div>
                   <div class="col-md-4 padding_0">
                      <div class="services_box">
-                        <div><img src="images/img-1.png" class="image_1"></div>
+                        <div><img src="images/stock6-1.jpg" class="image_1"></div>
                         <h4 class="express_text">Residential and Commercial Solutions</h4>
                         <p class="lorem_text">From cozy homes to large commercial spaces, we tailor our services to meet the unique needs of every property. Our professional team is equipped to handle any size job with the same level of care and expertise. </p>
                         <div class="seemore_bt"><a href="#">See More</a></div>
@@ -155,7 +155,7 @@
                         <h4 class="express_text">Custom Care for Every Space</h4>
                         <p class="lorem_text">No two spaces are alike, which is why we offer personalized cleaning solutions designed specifically for your windows. We assess your needs and deliver results that reflect the unique character and requirements of your space. </p>
                         <div class="seemore_bt"><a href="#">See More</a></div>
-                        <div><img src="images/img-3.png" class="image_1"></div>
+                        <div><img src="images/stock8-1.jpg" class="image_1"></div>
                      </div>
                   </div>
                </div>
@@ -173,7 +173,7 @@
          <div class="container">
             <h2 class="clean_text">Clean  And  Quality</h2>
             <p class="ipsum_text">At our core, we believe in delivering both cleanliness and quality with every service. Our skilled team uses top-of-the-line products and techniques to ensure your windows are not only spotless but also treated with the utmost care. With our commitment to excellence, we guarantee a pristine finish that enhances the beauty of your home or business. </p>
-            <div class="quote_bt_1"><a href="#">Get A Quote</a></div>
+            <div class="quote_bt_1"><a href="#quote">Get A Quote</a></div>
          </div>
       </div>
       <!-- providing section end -->
@@ -279,9 +279,9 @@
       <!-- form section start -->
       <div class="form_section layout_padding">
          <div class="container">
-            <h1 class="form_taital">Get a <span style="color: #0c426e">Quote</span></h1>
+            <h1 class="form_taital" id="quote">Get a <span style="color: #0c426e">Quote</span></h1>
             <div class="form_fields">
-                  <form>
+                  <form method="post" class="form-class" action="mail.php">
                      <fieldset>
                         <legend>Customer Information</legend>
                            <label for="name">Name</label> <br>
@@ -294,7 +294,7 @@
                         </div>
                            <label for="cust_number">Phone Number</label> <br>
                         <div class="input-center">
-                           <input type ="tel" id = "cust_number" name="cust_number" autocomplete="tel"> <br>
+                           <input oninput="phoneNumberFormatter()" type ="tel" id = "cust_number" name="cust_number" autocomplete="tel"> <br>
                         </div>
                            <label for="street-address">Street Address</label> <br>
                         <div class="input-center">
@@ -302,7 +302,7 @@
                         </div>
                            <label for="postal-code">ZIP/Postal Code</label> <br>
                         <div class="input-center">
-                           <input class="postal-code" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"> <br>
+                           <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" enterkeyhint="next"> <br>
                         </div>
                            <label for="city">City</label> <br>
                         <div class="input-center">
@@ -316,12 +316,11 @@
                               <option value="FL">FL</option>
                            </select> 
                          </div> <br>
-                        <input type="radio" id="res" name="res-com" value="Residential" checked>
+                        <input type="radio" id="res" name="res-com" value="Residential" checked> 
                         <label for="res">Residential</label> <br>
                         <input type="radio" id="cus" name="res-com" value="Commercial">
                         <label for="com">Commercial</label> <br>
-                        <button type="submit" class="button-submit" formaction="/mail.php">Submit</button>
-
+                        <button type="submit" name="button-submit"class="button-submit">Submit</button>
                      </fieldset>
                   </form>
             </div>
@@ -333,19 +332,18 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-sm-6">
-                  <h2 class="useful_text">Contact Us</h2>
+                  <h2 class="useful_text" id="contact">Contact Us</h2>
                   <div class="location_text"><img src="images/map-icon1.png"><a href="#"><span class="padding_left_15">Pensacola, FL</span></a></div>
                   <div class="location_text"><img src="images/call-icon1.png"><a href="#"><span class="padding_left_15">(+71) 8522369417</span></a></div>
                   <div class="location_text"><img src="images/mail-icon1.png"><a href="#"><span class="padding_left_15">demo@gmail.com</span></a></div>
                </div>
                <div class="col-lg-3 col-sm-6">
-                  <h2 class="useful_text">Useful link </h2>
+                  <h2 class="useful_text">Links </h2>
                   <div class="footer_menu">
                      <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="service.html">Service</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                      </ul>
                   </div>
                </div>
@@ -375,7 +373,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">Copyright 2024 All Rights Reserved. </p>
+            <p class="copyright_text">Copyright 2024 ShineProsLLC </p>
          </div>
       </div>
       <!-- copyright section end -->
@@ -416,6 +414,24 @@
          function closeNav() {
          document.getElementById("myNav").style.width = "0%";
          }
+      </script>
+      <script> 
+        function formatPhoneNumber(value) {
+            if (!value) return value;
+            const phoneNumber = value.replace(/[^\d]/g, '');
+            const phoneNumberLength = phoneNumber.length;
+            if(phoneNumberLength < 4) return phoneNumber;
+            if(phoneNumberLength < 7) {
+                return `(${phoneNumber.slice(0,3)}) ${phoneNumber.slice(3)}`;
+            }
+            return `(${phoneNumber.slice(0,3)}) ${phoneNumber.slice(3,6,)}-${phoneNumber.slice(6, 10)}`;
+        }
+
+        function phoneNumberFormatter() {
+            const inputField = document.getElementById('cust_number');
+            const formattedInputValue = formatPhoneNumber(inputField.value);
+            inputField.value = formattedInputValue;
+        }
       </script>   
    </body>
 </html>

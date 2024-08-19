@@ -50,8 +50,8 @@
                      <div class="overlay-content">
                         <a href="index.php">Home</a>
                         <a href="services.html">Services</a>
-                        <a href="providing.html">Providing</a>
-                        <a href="choose.html">Choose</a>
+                        <a href="providing.html">Quality Statement</a>
+                        <a href="choose.html">Why Choose Us</a>
                      </div>
                   </div>
                   <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png" class="toggle_menu"></span>
@@ -362,7 +362,6 @@
             <div class="social_icon">
                <div id="social">
                   <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/profile.php?id=100094341867865"></a>
-                  <a class="twitterBtn smGlobalBtn" href="#"></a>
                   <a class="instagramBtn smGlobalBtn" href="#"></a>
                   <a class="linkedinBtn smGlobalBtn" href="#"></a>
                </div>

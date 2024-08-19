@@ -982,8 +982,9 @@ input.Enter_text::placeholder {
 }
 
 
-/* twitter button class*/
+/* twitter button class */
 
+/*
 .twitterBtn {
     background: #ffffff;
 }
@@ -991,13 +992,14 @@ input.Enter_text::placeholder {
 .twitterBtn:before {
     font-family: "FontAwesome";
     content: "\f16d";
-    /* add twitter icon */
+    //add twitter icon
 }
 
 .twitterBtn:hover {
     color: #ffffff;
     background: #0c426e;
-}
+} 
+*/
 
 
 /* instagram button class*/
@@ -1008,7 +1010,7 @@ input.Enter_text::placeholder {
 
 .instagramBtn:before {
     font-family: "FontAwesome";
-    content: "\f0d5";
+    content: "\f16d";
     /* add instagrm icon */
 }
 
